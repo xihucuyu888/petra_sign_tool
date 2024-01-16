@@ -1,0 +1,77 @@
+/* 通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+#outputMessage {
+    margin-top: 20px; /* 添加上边距 */
+    white-space: pre-wrap; /* 保留换行符和空格 */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    border: 2px solid #4b4bff;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    flex: 1;
+    padding: 16px 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    resize: none; /* 禁用调整大小功能 */
+    min-height: 100px; /* 设置最小高度 */
+}
+
+
+button.sign-button {
+    background-color: #4b4bff;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+button.sign-button:hover {
+    background-color: #3a3aff;
+}
+
+button.sign-button:not(:last-child) {
+    margin-bottom: 10px;
+}
