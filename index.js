@@ -40,8 +40,10 @@ async function handleClick() {
     })
         .then((response) => {
           console.log("签名结果:", response);
-          outputMessage.textContent = `fullMessage：\n${response.fullMessage}\n\n签名：\n${response.signature}\n\n地址：\n${response.address}`;
-        })
+          console.log("fullMessage：:", response.fullMessage);
+          let str = JSON.stringify(`<p>fullMessage：</p>${response.fullMessage}<p>签名：</p>${response.signature}<p>地址：</p>${response.address}`);
+          outputMessage.innerHTML = str.substring(1, str.length - 1);
+       })
         .catch((error) => {
           console.error("签名失败:", error);
           alert("签名失败，请查看控制台以获取详细信息。");
